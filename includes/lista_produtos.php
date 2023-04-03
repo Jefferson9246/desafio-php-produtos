@@ -1,5 +1,5 @@
 <?php
-	if($_GET['status'] == 'success'){
+	if(isset($_GET['status']) && $_GET['status'] == 'success'){
 		echo '<div class="alert alert-success alert-dismissible fade show" role="alert" style="height:40%">
 		Sucesso ao cadastrar o produto!
 		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
