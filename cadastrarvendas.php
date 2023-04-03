@@ -38,7 +38,6 @@ if(isset($_POST['cliente'])){
         $obVendaProdutos->total_item = $produto->total;
         $obVendaProdutos->cadastrar();
     }
-    //retorna json com status
     echo json_encode(['status' => 'success']);
     exit;
 }

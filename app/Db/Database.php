@@ -12,7 +12,7 @@ class Database {
     private $connection;
 
     const HOST = 'localhost';
-    const NAME = 'postgres';
+    const NAME = 'produtos';
     const USER = 'postgres';
     const PASS = '102030';
 

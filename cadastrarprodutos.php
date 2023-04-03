@@ -5,7 +5,7 @@ require __DIR__ . '/vendor/autoload.php';
 use \App\Controllers\Produto;
 use \App\Controllers\ProdutoTipo;
 
-// echo '<pre>'; print_r($_POST); echo '</pre>';
+DEFINE('TITLE', 'Cadastrar Produtos');
 
 if(isset($_POST['descricao'], $_POST['valor'], $_POST['tipo'])) {
     $obProduto = new Produto;
@@ -20,14 +20,13 @@ if(isset($_POST['descricao'], $_POST['valor'], $_POST['tipo'])) {
 }
 
 if(isset($_GET['tipos'])) {
-    //vai no banco e pega os tipos e depois retorna um json
     $obProdutoTipo = new ProdutoTipo;
     $tipos = $obProdutoTipo->getTipos();
     echo json_encode($tipos);
     exit;
 }
 
-$title = 'Cadastro de produtos';
+// $title = 'Cadastro de produtos';
 
 include __DIR__ .'/includes/header.php';
 include __DIR__ .'/includes/form_produtos.php';

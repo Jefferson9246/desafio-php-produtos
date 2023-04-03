@@ -1,7 +1,8 @@
 <?php
 
 require __DIR__ . '/vendor/autoload.php';
-$title = 'Cadastro de tipos';
+
+DEFINE('TITLE', 'Cadastrar Tipos');
 
 
 
